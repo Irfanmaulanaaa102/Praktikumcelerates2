@@ -1,0 +1,187 @@
+ html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Rubik', sans-serif;
+
+      position: relative;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .nav-link {
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #18d26e !important;
+    }
+
+    .nav-link.active {
+      color: #18d26e !important;
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #18d26e;
+      bottom: 0;
+      left: 0;
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #f8f9fa;
+    }
+  .portfolio-item .caption {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .portfolio-item:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+  
+  .portfolio-item:hover .overlay {
+    opacity: 1;
+  }
+
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .masonry-item {
+    break-inside: avoid;
+  }
+  
+  .portfolio-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+    
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-weight: 700;
+    }
+
+    .section-title p {
+      color: #6c757d;
+    }
+
+    .project-info-box {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    .project-info-box ul li {
+      margin-bottom: 10px;
+    }
+
+    .carousel img {
+      object-fit: cover;
+      max-height: 400px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      background-color: #000;
+    }
+    #preloader {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #dee2e6;
+        border-top: 5px solid #0d6efd;
+        border-radius: 50%;
+        animation: spin 0.9s linear infinite;
+      }
+      
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      
+      
+.carousel-item {
+	margin-top: 20%;
+}
+.carousel-item h1{
+    color: #9c9c9c;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .header {
+	background-position: 68%;
+}
+}
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('../image/cat.gif') center center/cover no-repeat;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Efek gelap */
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
